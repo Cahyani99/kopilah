@@ -33,14 +33,13 @@
         <a href="#home">Home</a>
         <a href="#about">Tentang Kami</a>
         <a href="#menu">Menu</a>
+        <a href="#products">Produk</a>
         <a href="#contact">Kontak</a>
       </div>
 
       <div class="navbar-extra">
         <a href="#" id="search-button"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart-button"
-          ><i data-feather="shopping-cart"></i
-        ></a>
+        <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
       <!-- Search Form Star -->
@@ -49,6 +48,37 @@
         <label for="search-box"><i data-feather="search"></i></label>
       </div>
       <!-- Search Form End -->
+
+      <!-- Shopping Cart Start-->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/bujur.jpg" alt="product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/bujur.jpg" alt="product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+          </div>
+          <div class="cart-item">
+          <img src="img/bujur.jpg" alt="product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+
+      </div>
+
+
+      <!-- Shopping Cart End-->
     </nav>
 
     <!-- navbar end-->
@@ -121,6 +151,84 @@
 
     <!--Menu Section end-->
 
+    <!-- Products Section star-->
+
+    <!-- Produk Unggulan -->
+    <section class="products" id="products">
+      <h2><span>Produk Unggulan</span> Kami</h2>
+      <p>
+        Temukan biji kopi terbaik pilihan kami yang siap menemani harimu dengan
+        cita rasa istimewa.
+      </p>
+
+      <div class="row">
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/bujur.jpg" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Coffee Beans 1</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/bujur.jpg" alt="Product 2" />
+          </div>
+          <div class="product-content">
+            <h3>Coffee Beans 2</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 35K <span>IDR 60K</span></div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/bujur.jpg" alt="Product 3" />
+          </div>
+          <div class="product-content">
+            <h3>Coffee Beans 3</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 32K <span>IDR 58K</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section end-->
+
     <!--Contact Section star-->
     <section id="contact" class="contact">
       <h2><span>Kontak</span> Kami</h2>
@@ -189,6 +297,33 @@
       </div>
     </footer>
     <!-- footer end -->
+
+    <!-- Modal Box Item Detail Star-->
+
+    <div class="modal" id="item-detail-modal">
+        <div class="modal-container">
+            <a href="#" class="close-icon"><i data-feather="x"></i></a>
+            <div class="modal-content">
+                <img src="img/bujur.jpg" alt="Product 1">
+                <div class="product-content">
+                    <h3>Product 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Labore, asperiores illum cumque architecto quae repellat natus dolorum temporibu blanditiis quia ab voluptatibus nostrum,excepturi expedita!</p>
+             <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+            <a href="#"><i data-feather="shopping-cart"></i> <span>add to cart</span></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Modal Box Item Detail End-->
 
     <!-- feather icons -->
     <script>
