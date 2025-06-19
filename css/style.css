@@ -147,18 +147,21 @@ body {
 }
 /*About Section */
 .about,
-.menu {
+.menu,
+.contact {
   padding: 8rem 7% 1.4rem;
 }
 
 .about h2,
-.menu h2 {
+.menu h2,
+.contact h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
 }
 .about h2 span,
-.menu h2 span {
+.menu h2 span,
+.contact h2 span {
   color: var(--primary);
 }
 .about .row {
@@ -265,6 +268,121 @@ body {
   width: 150px;
   height: 150px;
   object-fit: cover;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* agar scroll tidak tertutup navbar */
+}
+
+/* Contact Section */
+.contact {
+  padding: 10rem 7% 3rem; /* padding atas ditambah agar tidak kepotong navbar */
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.contact h2 span {
+  color: var(--primary);
+}
+
+.contact p {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: #222;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.contact .row .map {
+  flex: 1 1 45%;
+  height: 250px;
+  border: none;
+  border-radius: 10px;
+}
+
+.contact .row form {
+  flex: 1 1 45%;
+  padding: 2rem;
+  text-align: center;
+  background-color: #111;
+  border-radius: 10px;
+}
+
+.contact .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  background-color: var(--bg);
+  border: 1px solid #eee;
+  padding-left: 1rem;
+  border-radius: 6px;
+}
+
+.contact .row form .input-group input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.4rem;
+  background: none;
+  color: #fff;
+}
+
+.contact .row form .btn {
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Responsive untuk Tablet */
+@media (max-width: 768px) {
+  .contact .row {
+    flex-direction: column;
+  }
+
+  .contact .row .map,
+  .contact .row form {
+    flex: 1 1 100%;
+  }
+
+  .contact .row .map {
+    height: 200px;
+  }
+
+  .contact .row form {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Responsive untuk Mobile */
+@media (max-width: 450px) {
+  .contact .row .map {
+    height: 180px;
+  }
+
+  .contact .row form .input-group input {
+    font-size: 1.2rem;
+  }
+
+  .contact .row form .btn {
+    font-size: 1.3rem;
+  }
 }
 
 /* Tambahan Media Query Menu */
