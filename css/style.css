@@ -384,6 +384,54 @@ html {
     font-size: 1.3rem;
   }
 }
+/* footer */
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  color: #3b2f2f;
+}
+
+footer .sosials {
+  margin-bottom: 1rem;
+}
+
+footer .sosials a {
+  margin: 0 10px;
+  color: #3b2f2f;
+  font-size: 1.8rem;
+  transition: 0.3s;
+}
+
+footer .sosials a:hover {
+  color: #fff;
+}
+
+footer .links {
+  margin-bottom: 1rem;
+}
+
+footer .links a {
+  color: #3b2f2f;
+  margin: 0 8px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer .links a:hover {
+  color: #fff;
+}
+
+footer .credit p {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+footer .credit a {
+  color: #3b2f2f;
+  text-decoration: none;
+}
 
 /* Tambahan Media Query Menu */
 @media (max-width: 758px) {
