@@ -124,3 +124,9 @@ body {
   .navbar .navbar-nav a:hover:after {
     transform: scaleX(0.2);
   }
+/*Mobile Phone*/
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
