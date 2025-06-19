@@ -830,10 +830,3 @@ footer .credit a {
     transform: scaleX(0.2);
   }
 }
-
-/* Mobile */
-@media (max-width: 450px) {
-  html {
-    font-size: 55%;
-  }
-}
