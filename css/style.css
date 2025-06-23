@@ -179,6 +179,12 @@ body {
   position: relative;
   -webkit-mask-image: linear-gradient(rgba(0,0,0,1) 85%,rgba(0,0,0,0));
   mask-image: linear-gradient(rgba(0,0,0,1) 85%,rgba(0,0,0,0));
+  /*
+.hero pakai mask-image gradasi dari hitam ke transparan.
+Efek ini bikin bagian bawah elemen terlihat memudar/hilang.
+Tapi efek hanya berlaku ke latar .hero, bukan isi di dalamnya.
+*/
+
 }
 
 /*.hero::after {
@@ -203,6 +209,14 @@ body {
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;
   -webkit-mask-position: center;
+  /*
+.mask-container ditimpa di atas .hero.
+SVG digunakan sebagai mask agar konten terlihat hanya di bagian tertentu.
+Gunakan posisi absolute + inset: 0 agar mask menutupi seluruh area hero.
+Efek tergantung isi SVG: putih = tampil, hitam = hilang.
+*/
+
+
 }
 
 .hero .content {
