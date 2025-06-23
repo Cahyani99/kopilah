@@ -660,6 +660,29 @@ footer .credit a {
   text-decoration: none;
 }
 
+/*
+==========================
+  Perbedaan clip-path & mask
+==========================
+
+1. clip-path:
+   - Memotong elemen dengan bentuk tertentu (circle, polygon, dst).
+   - Bagian di luar bentuk tidak ditampilkan sama sekali.
+   - Tidak bisa membuat gradasi atau transparansi sebagian.
+   - Ringan dan cocok untuk bentuk sederhana.
+   - Contoh:
+     clip-path: circle(50% at center);
+
+2. mask (mask-image):
+   - Mengatur bagian elemen yang terlihat/transparan berdasarkan gambar atau gradasi.
+   - Bisa menggunakan alpha/transparansi, termasuk semi-transparan (fade).
+   - Bisa pakai gambar PNG/SVG atau linear-gradient.
+   - Elemen tetap bisa diklik walau tidak terlihat (tergantung mask).
+   - Contoh:
+     mask-image: linear-gradient(to right, black, transparent);
+*/
+
+
 .modal {
   display: none;
   position: fixed;
