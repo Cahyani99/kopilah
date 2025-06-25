@@ -77,13 +77,17 @@
                   &minus;
                 </button>
                 <span x-text="item.quantity"></span>
-                <button id="add" @click="$store.cart.add(item)">&plus;</button>
-                &equals;
+                <button id="add" @click="$store.cart.add(item)">&plus;</button
+                >&equals;
                 <span x-text="rupiah(item.total)"></span>
               </div>
             </div>
           </div>
         </template>
+
+        <h4 x-show="$store.cart.items.length">
+          Total : <span x-text="rupiah($store.cart.total)"></span>
+        </h4>
       </div>
 
       <!-- Shopping Cart End-->
