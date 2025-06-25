@@ -489,16 +489,11 @@ html {
 
 .products .product-price {
   font-size: 1rem;
-  color: var(--primary);
+  color: floralwhite;
   font-weight: bold;
 }
 
-.products .product-price span {
-  font-size: 0.9rem;
-  color: #999;
-  margin-left: 0.5rem;
-  text-decoration: line-through;
-}
+
 
 /* Responsif mobile */
 @media (max-width: 768px) {
